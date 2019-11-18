@@ -16,7 +16,7 @@ def find_most_similar_tweets(vectorized_input, vectorized_tweets, topn, model):
     return vectorized_tweets[0:topn]
 
 
-def process_user_input(topic = 'canada', time_limit=10, data_dir='./', topn=10):
+def process_user_input(model, user_input, topic = 'canada', time_limit=10, data_dir='./', topn=10):
     print('topic:',topic)
     print('time_limit:',time_limit)
     track_list = [k for k in topic.split(' ')]
@@ -28,10 +28,8 @@ def process_user_input(topic = 'canada', time_limit=10, data_dir='./', topn=10):
     if no_data:
         return 'There is no data with topic: '+ topic +' in  '+ str(time_limit) +' seconds'
     else:
-        print('uploading the model...')
-        model = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary = True)
         vectorized_tweets = vectorize_latest_tweets(tweets, model)
-        vectorized_user_input = vectorize_user_input(topic, model)
+        vectorized_user_input = vectorize_user_input(user_input, model)
         print('finding the top '+str(topn)+' tweets...')
         # find the top topn= 10  similar tweets
         recommendations = find_most_similar_tweets(vectorized_user_input, vectorized_tweets, topn, model)
@@ -39,11 +37,14 @@ def process_user_input(topic = 'canada', time_limit=10, data_dir='./', topn=10):
     return recommendations
 
 
-def fetch_tweets(user_input ='iran', time_limit = 20):
-    return list(process_user_input(user_input, time_limit)['tweet'])
+def fetch_tweets(model, user_input, topic, time_limit = 20):
+    return list(process_user_input(model, user_input, topic, time_limit)['tweet'])
 
 
 if __name__ == '__main__':
-    user_input = 'iran'
+    print('uploading the model...')
+    print('test')
+    model = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary = True)
+    user_input = 'China'
     time_limit = 20
-    fetch_tweets = fetch_tweets(user_input, time_limit)
+    fetch_tweets = fetch_tweets(model, user_input, topic, time_limit)

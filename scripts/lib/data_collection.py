@@ -52,7 +52,6 @@ def get_latest_tweets(data_dir, auth, time_limit, topic):
     '''
     it gets the latest tweets in time_limit with topic saved in the data_dir
     data_dir: data direcoty
-    auth:dddddddd
     '''
     print("streaming tweets...")
     tic = time.time()
