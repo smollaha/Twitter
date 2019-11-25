@@ -14,12 +14,12 @@ A notebook that documents the steps for
  - returning the most similar tweets related to the given topic and sub-topic by means of the similarity score 
 2. *Twitter/scripts/lib*
 
-contains 
+   contains 
 
-- *data_collection.py*
+   - *data_collection.py*
 
-gets the latest tweets for the topic
+      gets the latest tweets for the topic
 
-- *data_preprocessing.py*
+   - *data_preprocessing.py*
 
-- *generate_recomendations.py*
+   - *generate_recomendations.py*
