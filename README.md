@@ -1,18 +1,18 @@
 # Recommender System
-- In this project, I wrote an app that takes topic and
+ In this project, I wrote an app that takes topic and
 sub-topic and time T as input data and returns the most relevant streaming
 tweets to the topic and sub topic in the last T seconds. The streaming tweets
 are collected, cleaned and vectorized to get the result.
 
 Here are a list of descriptions for each folder in this reposition.
--  *jupyter notebooks/*
-   *twitter_proj.ipynb*
+-  *jupyter notebooks/twitter_proj.ipynb*
+
    A notebook that documents the steps for 
    - saving  streaming related  tweets to the topic in the given time frame
    - cleaning and pre-processing the saved tweets
    - vectorization using the pretrained model GoogleNews-vectors-negative300.bin
    - returning the most similar tweets related to the given topic and sub-topic by means of the similarity score 
-2. *Twitter/scripts/lib*
+-  *Twitter/scripts/lib*
 
    contains 
 
