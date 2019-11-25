@@ -15,6 +15,7 @@ A notebook that documents the steps for
 2. Twitter/scripts/lib
 contains 
 **data_collection.py**
+
 gets the latest tweets for the topic
 
 **data_preprocessing.py**
