@@ -13,7 +13,9 @@ A notebook that documents the steps for
  - vectorization using the pretrained model GoogleNews-vectors-negative300.bin
  - returning the most similar tweets related to the given topic and sub-topic by means of the similarity score 
 2. Twitter/scripts/lib
+
 contains 
+
 **data_collection.py**
 
 gets the latest tweets for the topic
