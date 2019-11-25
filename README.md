@@ -31,10 +31,11 @@ Here are a list of descriptions for each folder in this reposition.
 
    a Flask app that user  submits  Sub-Topic, Topic and Timeframe  at /user_input.html and  it returns 
    the most relevent tweets at /results.html
-- *Twitter/scripts/front-end/user_input.html*
+- *Twitter/scripts/front-end
+   - */user_input.html*
 
-  a table for the user to submit Sub-Topic, Topic and Timeframe
-- *Twitter/scripts/front-end/results.html*
+    a table for the user to submit Sub-Topic, Topic and Timeframe
+    - */results.html*
   
   a table of results of the related tweets is saved here.
   
