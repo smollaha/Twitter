@@ -5,14 +5,14 @@ tweets to the topic and sub topic in the last T seconds. The streaming tweets
 are collected, cleaned and vectorized to get the result.
 
 Here are a list of descriptions for each folder in this reposition.
-1.  jupyter notebooks/
-twitter_proj.ipynb
+1.  *jupyter notebooks/*
+*twitter_proj.ipynb*
 A notebook that documents the steps for 
  - saving  streaming related  tweets to the topic in the given time frame
  - cleaning and pre-processing the saved tweets
  - vectorization using the pretrained model GoogleNews-vectors-negative300.bin
  - returning the most similar tweets related to the given topic and sub-topic by means of the similarity score 
-2. Twitter/scripts/lib
+2. *Twitter/scripts/lib*
 
 contains 
 
@@ -20,6 +20,6 @@ contains
 
 gets the latest tweets for the topic
 
-**data_preprocessing.py**
+*data_preprocessing.py*
 
-**generate_recomendations.py**
+*generate_recomendations.py*
