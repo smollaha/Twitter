@@ -27,4 +27,10 @@ Here are a list of descriptions for each folder in this reposition.
    - *generate_recomendations.py*
     
      generats the most related tweets to the user inpot topic and sub-topic
-3. *app.py*
+-  *app.py*
+
+   a Flask app that user  submits  Sub-Topic, Topic and Timeframe  at /user_input.html and  it returns 
+   the most relevent tweets at /results.html
+- *Twitter/scripts/front-end/user_input.html*
+
+- *Twitter/scripts/front-end/results.html*
