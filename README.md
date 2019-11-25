@@ -18,8 +18,12 @@ A notebook that documents the steps for
 
    - *data_collection.py*
 
-      gets the latest tweets for the topic
+      gets the latest tweets for the topic for the time frame
 
    - *data_preprocessing.py*
+     
+     cleaning, and vectorizing  given tweets
 
    - *generate_recomendations.py*
+    
+     generats the most related tweets to the user inpot topic and sub-topic
