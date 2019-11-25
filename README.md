@@ -16,7 +16,7 @@ A notebook that documents the steps for
 
 contains 
 
-**data_collection.py**
+*data_collection.py*
 
 gets the latest tweets for the topic
 
