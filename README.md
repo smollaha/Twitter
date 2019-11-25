@@ -18,11 +18,11 @@ Here are a list of descriptions for each folder in this reposition.
 
    - *data_collection.py*
 
-      gets the latest tweets for the topic for the time frame
+      gets the latest tweets for the topic in the time frame
 
    - *data_preprocessing.py*
      
-     cleaning, and vectorizing  given tweets
+     cleans and vectorizes  given tweets
 
    - *generate_recomendations.py*
     
